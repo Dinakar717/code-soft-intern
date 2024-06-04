@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <title>Personal website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b4b8ec40ba.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <i><h1 class="logo">ARISE</h1></i>
+                
+                    <ul id="sidemenu">
+                     <li><a href="#header">Home</a></li> 
+                     <li><a href="#about">About</a></li> 
+                     <li><a href="#Services">Services</a></li> 
+                     <li><a href="#contact">Contact</a></li>   
+                     
+                    </ul>
+            
+                </nav>
+                <div class="header-text">
+                    <p><i>Web Designer/App Devloper</i></p>
+                    <h1> Hi, I'm <span>ARUN </span><br>Raj From India</h1>
+                </div>
+            </div>
+        </div>
+      <!-- -----------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="potra.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">ABOUT ME</h1>
+                        <p> As a web designer,I'm passionate about creating visually appealing and 
+                            user-friendly websites.With a keen eye for design and a strong understading 
+                            user experience principles,I strive to craft engaging digital experiences that
+                            leave a lasting impression.My goal is to continually refine my skills and stay 
+                            updated with the latest trends and technologies in the ever-evolving field of 
+                            web design and I know C,C++ programming language.Continuous learning is important
+                            to me,as I stay updated with new features and techniques in C,C++ to enhance
+                            my skills and deliver high-quality solutions to diverse projects.
+                        </p>
+                            <div class="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                               <p class="tab-links"onclick="opentab('experience')">EXPERIENCE</p>
+                               <p class="tab-links"onclick="opentab('education')">EDUCATION</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>WEB DEVLOPMENT</span><br>HTML/CSS/JS</li>
+                                    <li><span>PROGRAMMING LANGUAGE</span><br>C/C++</li>
+                                    <li><span>MS OFFICE</span><br>MS EXCEL/PPT</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>FRESHER</span><br>YES,I'M FRESHER BUT I WANT THE EXPERIENCE</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education"> 
+                                <ul>
+                                    <li><span>2019-2021</span><br>HSC FROM S.M.H.HR.SECONDARY SCHOOL SIRKALI.</li>
+                                    <li><span>2021-2024</span><br>BCA FROM ACAS KUMBAKONAM.</li>
+                                </ul>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -----------services---------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-brands fa-canadian-maple-leaf"></i>
+                <h2>LOGO DESIGN</h2>
+                <p>I Will Service for Some Food Restaurant <br> To Design Restaurant logo
+                And food Menu</p>
+                <a href="#">Learn more</a>               
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>MICRO SOFT OFFICE</h2>
+                <p>I Am Work Excel Sheet And PPT Presentations<br> I Am Make Presentation To Selling For College Students </p>
+                <a href="#">Learn more</a>               
+            </div>
+            <div>
+                <i class="fa-regular fa-file-video"></i>
+                <h2>VIDEO EDITING</h2>
+                <p>Some Times I Edit The <br> Videos and Photos </p>
+                <a href="#">Learn more</a>               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact-----------  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT ME</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>arunrajraj0011@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9345802289</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100059618354562"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/in_arun_7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/arun-raj-b76106285?utm_source"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="image/Resume..pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © ArunRaj. Made The <i class="fa-solid fa-dove"></i> Personal Website</p>
+    </div>
+</div>
+
+
+
+
+        <script>
+
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname){
+              for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents){
+                 tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+}
+
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function openmenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+  
+  <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbzWh6-ZQ1FOyFhzO_6oxpgOfZ1T4y8Es9EOsigwd3dw7kEkmM9OQRqJuU0bGXUGgOpyoA/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully" 
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+             form.reset()   
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
